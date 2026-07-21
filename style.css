@@ -358,6 +358,56 @@ a:hover {
   }
 }
 
+/* Feature Cards */
+.feature-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .feature-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.feature-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+  border: 1px solid #d1fae5;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-light);
+}
+
+.feature-card-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.feature-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--primary-dark);
+}
+
+.feature-card ul {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.feature-card ul li {
+  margin-bottom: 0.45rem;
+  font-size: 0.95rem;
+}
+
 /* Loading Animation */
 @keyframes shimmer {
   0% {
@@ -372,4 +422,84 @@ a:hover {
   animation: shimmer 2s infinite;
   background: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
   background-size: 1000px 100%;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1a14;
+    --card-bg: #162019;
+    --text: #e5e7eb;
+    --text-light: #9ca3af;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  body {
+    background: linear-gradient(135deg, #0f1a14 0%, #162019 100%);
+    color: var(--text);
+  }
+
+  header {
+    background: linear-gradient(135deg, #064e3b 0%, #022c22 100%);
+  }
+
+  main {
+    background: var(--card-bg);
+  }
+
+  .app-list article {
+    background: linear-gradient(135deg, #1a2e23 0%, #162019 100%);
+    border-color: #1e3a2f;
+  }
+
+  .app-list article:hover {
+    border-color: var(--primary);
+  }
+
+  .app-list h2 a {
+    color: var(--primary-light);
+  }
+
+  .app-list h2 a:hover {
+    color: var(--primary);
+  }
+
+  .feature-card {
+    background: linear-gradient(135deg, #1a2e23 0%, #162019 100%);
+    border-color: #1e3a2f;
+  }
+
+  .feature-card:hover {
+    border-color: var(--primary-light);
+  }
+
+  .feature-card h4 {
+    color: var(--primary-light);
+  }
+
+  h2, h3 {
+    color: var(--primary-light);
+  }
+
+  h4 {
+    color: var(--text);
+  }
+
+  a {
+    color: var(--primary-light);
+  }
+
+  a:hover {
+    color: var(--primary);
+  }
+
+  .screenshots img {
+    background: #1a2e23;
+  }
+
+  footer {
+    color: var(--text-light);
+  }
 }

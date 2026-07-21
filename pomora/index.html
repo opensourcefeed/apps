@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomora – Pomodoro Focus Timer | Android App</title>
+  <meta name="description" content="A beautiful Pomodoro timer app for Android. Focus better with configurable timer sessions, track your productivity with statistics and history, and stay motivated with sound notifications. Privacy-first, offline-ready.">
+  <meta name="keywords" content="pomodoro timer, focus timer, productivity app, time management, focus app, pomodoro technique, study timer, work timer, break timer, android timer app, offline pomodoro">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pomora – Pomodoro Focus Timer">
+  <meta property="og:description" content="A beautiful Pomodoro timer for Android. Focus better, track your productivity, and build better habits. Privacy-first, offline-ready.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://opensourcefeed.github.io/apps/pomora/">
+  <meta property="og:image" content="https://opensourcefeed.github.io/apps/pomora/icon.png">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pomora – Pomodoro Focus Timer">
+  <meta name="twitter:description" content="A beautiful Pomodoro timer for Android. Focus better, track your productivity, and build better habits.">
+  <meta name="twitter:image" content="https://opensourcefeed.github.io/apps/pomora/icon.png">
+  
+  <link rel="icon" type="image/png" href="/apps/pomora/icon.png">
+  <link rel="stylesheet" href="/apps/style.css">
+</head>
+<body>
+  <header>
+    <h1>Pomora</h1>
+    <nav>
+      <a href="/apps/">← All Apps</a>
+      <a href="/apps/pomora/privacy-policy/">Privacy Policy</a>
+    </nav>
+  </header>
+  <main itemscope itemtype="https://schema.org/MobileApplication">
+    <section class="hero">
+      <div>
+        <img src="/apps/pomora/icon.png" alt="Pomora Pomodoro Timer App Icon" class="app-icon" loading="eager" width="120" height="120">
+      </div>
+      <h2>Focus Better, Achieve More</h2>
+      <p>
+        Pomora is a <strong>beautiful, privacy-first Pomodoro timer</strong> designed to help you stay focused and productive. 
+        Use the proven Pomodoro Technique to break your work into focused intervals with short and long breaks. 
+        Track your progress with detailed statistics, review your session history, and customize every aspect of your focus routine. 
+        All data stays securely on your device.
+      </p>
+      <meta itemprop="operatingSystem" content="Android">
+      <meta itemprop="applicationCategory" content="ProductivityApplication">
+      <div style="margin: 1.5rem 0;">
+        <span style="display: inline-block; padding: 0.25rem 0.75rem; background: #DBEAFE; color: #1E40AF; border-radius: 4px; font-size: 0.875rem; font-weight: 600; margin-right: 0.5rem;">v0.0.1</span>
+        <span style="display: inline-block; padding: 0.25rem 0.75rem; background: #FEF3C7; color: #92400E; border-radius: 4px; font-size: 0.875rem; font-weight: 600; margin-right: 0.5rem;">Pre-release</span>
+        <span style="display: inline-block; padding: 0.25rem 0.75rem; background: #DCFCE7; color: #166534; border-radius: 4px; font-size: 0.875rem; font-weight: 600;">Privacy First</span>
+      </div>
+      <span class="cta" style="cursor: default; opacity: 0.85;">
+        📱 Coming Soon to Google Play
+      </span>
+    </section>
+    
+    <section>
+      <h3>✨ Key Features</h3>
+      
+      <div class="feature-cards">
+        <div class="feature-card">
+          <span class="feature-card-icon">⏱️</span>
+          <h4>Focus Timer</h4>
+          <ul>
+            <li><strong>Configurable Durations</strong>: Set custom focus, short break, and long break intervals</li>
+            <li><strong>Animated Ring</strong>: Beautiful circular progress indicator with smooth animations</li>
+            <li><strong>Phase Cycling</strong>: Automatic transitions between focus and break sessions</li>
+            <li><strong>Full Controls</strong>: Start, pause, resume, reset, and skip with ease</li>
+            <li><strong>Background Timer</strong>: Keeps running reliably via Android foreground service</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <span class="feature-card-icon">📊</span>
+          <h4>Statistics & Insights</h4>
+          <ul>
+            <li><strong>Total Pomodoros</strong>: Track your lifetime focus sessions</li>
+            <li><strong>Focus Time</strong>: See cumulative hours spent in deep work</li>
+            <li><strong>Daily Streak</strong>: Build and maintain productive habits</li>
+            <li><strong>Today's Summary</strong>: Quick glance at your daily progress</li>
+            <li><strong>Daily History</strong>: Browse stats by date with a scrollable list</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <span class="feature-card-icon">📝</span>
+          <h4>Session History</h4>
+          <ul>
+            <li><strong>Complete Log</strong>: Every session recorded with timestamp and duration</li>
+            <li><strong>Color-Coded</strong>: Visual distinction between focus and break sessions</li>
+            <li><strong>Date Grouping</strong>: Sessions organized by Today, Yesterday, and date</li>
+            <li><strong>Crash Recovery</strong>: Automatic session restoration if the app is interrupted</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <span class="feature-card-icon">⚙️</span>
+          <h4>Customization</h4>
+          <ul>
+            <li><strong>Duration Steppers</strong>: Fine-tune focus and break lengths with +/− controls</li>
+            <li><strong>Auto-Start</strong>: Optionally auto-start breaks and focus sessions</li>
+            <li><strong>Sound Alerts</strong>: Toggle completion chime on or off</li>
+            <li><strong>Notifications</strong>: Toggle completion alerts with vibration</li>
+            <li><strong>Persistent Settings</strong>: Your preferences saved instantly via MMKV storage</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <span class="feature-card-icon">🔔</span>
+          <h4>Sound & Notifications</h4>
+          <ul>
+            <li><strong>Completion Chime</strong>: Audible beep when a session ends</li>
+            <li><strong>Alert & Vibration</strong>: Get notified even when not looking at the screen</li>
+            <li><strong>Respects Settings</strong>: Sound and notifications independently toggleable</li>
+            <li><strong>Background Alerts</strong>: Notifications delivered via foreground service</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <span class="feature-card-icon">🔒</span>
+          <h4>Privacy & Reliability</h4>
+          <ul>
+            <li><strong>100% Local Storage</strong>: All data stored on-device using MMKV</li>
+            <li><strong>No Internet Required</strong>: Works completely offline</li>
+            <li><strong>Zero Tracking</strong>: No analytics, no ads, no data collection</li>
+            <li><strong>Session Persistence</strong>: Timer state survives app backgrounding and crashes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <h3>🔒 Privacy & Security</h3>
+      <p>
+        <strong>Your privacy is our priority.</strong> Pomora is built on a privacy-first architecture:
+      </p>
+      <ul>
+        <li><strong>100% Local Storage</strong>: All session data, statistics, and settings stay on your device using MMKV storage</li>
+        <li><strong>Zero Tracking</strong>: No analytics SDKs, no behavioral tracking, no data mining</li>
+        <li><strong>No Ads</strong>: Clean, distraction-free interface without advertisements</li>
+        <li><strong>No Account Required</strong>: Start focusing immediately without sign-up</li>
+        <li><strong>Offline First</strong>: Works perfectly without internet connection</li>
+        <li><strong>Open Communication</strong>: Full transparency about data handling in our <a href="/apps/pomora/privacy-policy/">Privacy Policy</a></li>
+      </ul>
+      <p style="font-style: italic; color: #666; margin-top: 1rem;">
+        <strong>Technical Stack:</strong> Built with React Native 0.86 & TypeScript. Uses MMKV for fast local storage, 
+        Hermes JavaScript engine for performance, and Android foreground service for reliable background timing.
+      </p>
+    </section>
+    
+    <section>
+      <h3>💬 Support</h3>
+      <p>
+        Have questions or feedback? Contact us at 
+        <a href="mailto:contact.opensourcefeed@gmail.com">contact.opensourcefeed@gmail.com</a>
+      </p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2026 Tahrik Studio. All rights reserved.
+  </footer>
+</body>
+</html>
