@@ -25,8 +25,8 @@
         <li><strong>Account information:</strong> When you sign up or sign in, we collect your email address and, if you choose email/password registration, your name and gender. If you sign in with Google, we receive your name, email address, and profile photo from Google.</li>
         <li><strong>Quiz activity:</strong> Your quiz answers, scores, quiz duration, practice progress, and leaderboard records (your best score and its time, all-time and for the current week) are stored so you can track progress and compete with other learners. Your first name and best score are visible to other learners on the leaderboard.</li>
         <li><strong>Data stored on your device:</strong> Practice progress and app settings (such as haptic feedback and ad frequency counters) are also kept in local storage on your device so you can resume where you left off.</li>
-        <li><strong>Usage analytics:</strong> We use Firebase Analytics to collect app usage data such as screens viewed and general app interactions, to help us understand how the app is used and improve it.</li>
-        <li><strong>Advertising identifiers:</strong> Hikma displays ads through Google AdMob, which may collect your device's advertising ID to serve and measure ads.</li>
+        <li><strong>Usage analytics:</strong> We use Firebase Analytics to collect app usage data such as screens viewed and general app interactions, to help us understand how the app is used and improve it. Advertising ID collection and ad personalization are turned off in Analytics.</li>
+        <li><strong>Ads:</strong> Hikma displays ads through Google AdMob. Because children use Hikma, every ad request is marked as child-directed: ads are not personalized, are limited to general-audience (G-rated) content, and the app does not access your device's advertising ID. AdMob may still receive limited technical information (such as IP address and device type) to deliver ads and prevent fraud.</li>
         <li><strong>Crash reports:</strong> We use Firebase Crashlytics to collect crash reports, including device and app details and your account's user ID, so we can find and fix problems.</li>
         <li><strong>App configuration:</strong> Firebase Remote Config uses an app installation identifier to deliver settings, such as how often ads are shown, without an app update.</li>
         <li><strong>Push notification token:</strong> If notifications are enabled, we use Firebase Cloud Messaging to deliver notifications to your device, which requires a device-specific messaging token.</li>
@@ -37,7 +37,7 @@
         <li>To create and manage your account and authenticate you when you sign in.</li>
         <li>To save your quiz progress, scores, and display your ranking on leaderboards.</li>
         <li>To understand app usage, diagnose crashes, and improve features and performance.</li>
-        <li>To serve advertisements that help keep the app free.</li>
+        <li>To show non-personalized advertisements that help keep the app free.</li>
         <li>To send you push notifications, where applicable.</li>
       </ul>
 
@@ -59,13 +59,21 @@
       <ul>
         <li>You can delete your account and associated data at any time from within the app: open the menu and choose <strong>Delete account</strong>. This removes your sign-in account, your profile, your exam records and leaderboard entries, and your practice progress, both on our servers and on your device. You can also request deletion by contacting us at the email below.</li>
         <li>You can reset or change your password at any time from within the app.</li>
-        <li>You can opt out of personalized ads through your device's ad settings.</li>
         <li>You can turn notifications and haptic feedback on or off at any time.</li>
       </ul>
 
       <h3>6. Children's Privacy</h3>
       <p>
-        Hikma is not directed at children under 13, and we do not knowingly collect personal information from children under 13.
+        Hikma is made for learners of all ages, including children. Children under 13 should use Hikma with the permission and supervision of a parent or guardian, who should ideally create and manage the account. To protect younger users:
+      </p>
+      <ul>
+        <li>We collect only what the app needs to work: sign-in details, quiz activity, and the technical data described above. We do not collect location, contacts, photos, or other device content.</li>
+        <li>Ads are child-directed, non-personalized, and limited to general-audience content, and the app does not use the advertising ID.</li>
+        <li>Leaderboards show only a learner's first name and score.</li>
+        <li>We do not sell personal data or use it for behavioural advertising.</li>
+      </ul>
+      <p>
+        A parent or guardian can review or delete their child's account and data at any time, using <strong>Delete account</strong> in the app or by contacting us at the email below. If we learn that we have collected personal information from a child without appropriate consent, we will delete it promptly.
       </p>
 
       <h3>7. Changes to This Policy</h3>
