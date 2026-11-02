@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://opensourcefeed.github.io/apps/</loc><lastmod>2026-10-29</lastmod><priority>1.0</priority></url>
   <url><loc>https://opensourcefeed.github.io/apps/expensewise/</loc><lastmod>2026-10-29</lastmod><priority>0.9</priority></url>
-  <url><loc>https://opensourcefeed.github.io/apps/decordle/</loc><lastmod>2026-10-29</lastmod><priority>0.9</priority></url>
+  <url><loc>https://opensourcefeed.github.io/apps/decordle/</loc><lastmod>2026-11-02</lastmod><priority>0.9</priority></url>
   <url><loc>https://opensourcefeed.github.io/apps/hikma/</loc><lastmod>2026-10-29</lastmod><priority>0.9</priority></url>
   <url><loc>https://opensourcefeed.github.io/apps/pomora/</loc><lastmod>2026-10-29</lastmod><priority>0.8</priority></url>
   <url><loc>https://opensourcefeed.github.io/apps/expensewise/privacy-policy/</loc><lastmod>2026-10-29</lastmod><priority>0.4</priority></url>
-  <url><loc>https://opensourcefeed.github.io/apps/decordle/privacy-policy/</loc><lastmod>2026-10-29</lastmod><priority>0.4</priority></url>
+  <url><loc>https://opensourcefeed.github.io/apps/decordle/privacy-policy/</loc><lastmod>2026-11-02</lastmod><priority>0.4</priority></url>
   <url><loc>https://opensourcefeed.github.io/apps/hikma/privacy-policy/</loc><lastmod>2026-10-29</lastmod><priority>0.4</priority></url>
   <url><loc>https://opensourcefeed.github.io/apps/pomora/privacy-policy/</loc><lastmod>2026-10-29</lastmod><priority>0.4</priority></url>
 </urlset>

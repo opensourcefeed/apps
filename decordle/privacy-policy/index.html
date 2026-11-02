@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Decordle Privacy Policy – Tahrik Studio</title>
-  <meta name="description" content="Privacy Policy for the Decordle word puzzle game: what data is collected, advertising with Google AdMob, connectivity and your choices.">
+  <meta name="description" content="Privacy Policy for the Decordle word puzzle game: what data is collected, advertising with Google AdMob, analytics and crash reports with Google Firebase, connectivity and your choices.">
   <link rel="canonical" href="https://opensourcefeed.github.io/apps/decordle/privacy-policy/">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#fafbfa" media="(prefers-color-scheme: light)">
@@ -13,7 +13,7 @@
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Tahrik Studio">
   <meta property="og:title" content="Decordle Privacy Policy">
-  <meta property="og:description" content="Privacy Policy for the Decordle word puzzle game: what data is collected, advertising with Google AdMob, connectivity and your choices.">
+  <meta property="og:description" content="Privacy Policy for the Decordle word puzzle game: what data is collected, advertising with Google AdMob, analytics and crash reports with Google Firebase, connectivity and your choices.">
   <meta property="og:url" content="https://opensourcefeed.github.io/apps/decordle/privacy-policy/">
   <meta property="og:image" content="https://opensourcefeed.github.io/apps/decordle/icon.png">
   <meta name="twitter:card" content="summary">
@@ -62,7 +62,7 @@
           <li aria-current="page">Privacy Policy</li>
         </ol>
         <h1>Decordle Privacy Policy</h1>
-        <p class="meta">Effective December 4, 2025 · Last updated December 4, 2025</p>
+        <p class="meta">Effective December 4, 2025 · Last updated November 2, 2026</p>
       </div>
     </div>
     <div class="container prose">
@@ -89,7 +89,8 @@
       <h3>1.2 Automatically Collected Information</h3>
       <ul>
         <li><strong>Device Information:</strong> Android version, device model, and app version for compatibility purposes</li>
-        <li><strong>Usage Data:</strong> Game mode selections, gameplay patterns, and feature usage to improve the app</li>
+        <li><strong>Usage Data:</strong> Anonymous app events such as opening the app, starting or finishing a game, the mode played, the number of guesses, hint use and sharing a result, collected with Google Firebase Analytics</li>
+        <li><strong>Crash Reports:</strong> When the app crashes, a report with the error, device model, Android version, app version and the game that was open, collected with Google Firebase Crashlytics</li>
         <li><strong>Advertising ID:</strong> Google Advertising ID for ad personalization (can be reset in Android settings)</li>
       </ul>
       
@@ -136,21 +137,21 @@
       <h3>3.1 Local Storage</h3>
       <ul>
         <li><strong>MMKV Storage:</strong> Game settings and preferences stored locally using fast MMKV library</li>
-        <li><strong>On-Device Only:</strong> Your game progress stays on your device and is not uploaded to our servers</li>
+        <li><strong>On-Device Only:</strong> Your game progress, statistics and streaks stay on your device and are not uploaded to our servers</li>
         <li><strong>No Cloud Sync:</strong> Data is not backed up or synced across devices</li>
       </ul>
       
       <h3>3.2 Data Retention</h3>
       <ul>
         <li>Game data persists on your device until you uninstall the app or clear app data</li>
-        <li>No server-side data storage means no data retention on our end</li>
+        <li>We do not run our own servers for app data. Anonymous analytics and crash reports are kept by Google Firebase for a limited period (up to 14 months for analytics events and 90 days for crash reports) and then deleted</li>
         <li>Uninstalling the app completely removes all local data</li>
       </ul>
       
       <h3>3.3 Security Measures</h3>
       <ul>
         <li>Standard Android security protocols protect app data</li>
-        <li>No transmission of sensitive personal information</li>
+        <li>No transmission of sensitive personal information; analytics and crash reports are sent over encrypted connections</li>
         <li>Regular security updates through app updates</li>
       </ul>
     </section>
@@ -169,9 +170,22 @@
         <li>AdMob may collect device information and usage data</li>
       </ul>
       
-      <h3>4.2 Web Content (WebView Mode)</h3>
+      <h3>4.2 Google Firebase Analytics and Crashlytics</h3>
       <p>
-        Some game modes use WebView to load web-based puzzles from opensourcefeed.org. When using these modes:
+        Since version 3.7, Decordle uses Google Firebase to understand how the app is used and to find and fix crashes.
+        This data is anonymous: it is linked to a random app-instance identifier, not to your name, email or phone number.
+        It is processed by Google according to the
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy information</a>.
+      </p>
+      <ul>
+        <li><strong>Firebase Analytics:</strong> app opens and in-game events listed in section 1.2</li>
+        <li><strong>Firebase Crashlytics:</strong> crash reports, including the last few in-app events before the crash</li>
+        <li>We use this data only to improve the app. We do not sell it or use it for advertising</li>
+      </ul>
+
+      <h3>4.3 Web Content (WebView Mode)</h3>
+      <p>
+        Seven of the eight games load web-based puzzles from opensourcefeed.org inside the app. When using these games:
       </p>
       <ul>
         <li><strong>Internet Required:</strong> Web-based game modes require internet connectivity</li>
@@ -179,9 +193,15 @@
         <li><strong>Third-Party Privacy:</strong> Web content is subject to opensourcefeed.org's privacy practices</li>
       </ul>
       
-      <h3>4.3 Google Play Services</h3>
+      <h3>4.4 Dictionary Lookups</h3>
+      <ul>
+        <li>To show a word's meaning (Word of the Day, hints and after a game), the app sends that single word to the free Dictionary API at dictionaryapi.dev. No other data is sent</li>
+      </ul>
+
+      <h3>4.5 Google Play Services</h3>
       <ul>
         <li>App updates and distribution through Google Play Store</li>
+        <li>In-app review prompts through Google Play, at most once every 90 days</li>
         <li>Subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play's Privacy Policy</a></li>
       </ul>
     </section>
@@ -194,15 +214,16 @@
       
       <h3>5.1 Internet Required For:</h3>
       <ul>
-        <li><strong>WebView Game Modes:</strong> Most game modes load puzzles from web sources</li>
-        <li><strong>Daily Challenges:</strong> Fetching daily puzzles requires internet</li>
+        <li><strong>Web Games:</strong> Two Words, Five Words, Ten Words, Word Gridle, Word Plant, Word Tail and Daily Cross load from opensourcefeed.org</li>
+        <li><strong>Word Meanings:</strong> Looking up definitions</li>
+        <li><strong>Analytics and Crash Reports:</strong> Sent when a connection is available</li>
         <li><strong>Advertisements:</strong> Loading and displaying ads</li>
         <li><strong>App Updates:</strong> Downloading updates from Google Play</li>
       </ul>
       
       <h3>5.2 Works Offline:</h3>
       <ul>
-        <li><strong>Native One Word Unlimited:</strong> Fully playable offline with pre-loaded dictionary</li>
+        <li><strong>One Word (Daily and Unlimited):</strong> Fully playable offline with a built-in word list</li>
         <li><strong>Settings:</strong> All app settings accessible offline</li>
         <li><strong>Statistics:</strong> View your stats and achievements offline</li>
       </ul>
@@ -232,6 +253,7 @@
         <li>Disable personalized ads through Android device settings</li>
         <li>Reset your Advertising ID to prevent ad tracking continuity</li>
         <li>Choose native mode over WebView mode for reduced internet dependency</li>
+        <li>Analytics and crash reports: there is no in-app switch yet. To have this anonymous data deleted, email us; uninstalling the app stops all collection</li>
       </ul>
     </section>
     
@@ -275,8 +297,9 @@
       <ul>
         <li>✅ Your game data stays on your device</li>
         <li>✅ We don't collect personal information</li>
+        <li>✅ Anonymous usage and crash reports (Google Firebase) help us fix bugs</li>
         <li>✅ The app shows ads to stay free</li>
-        <li>✅ Most game modes need internet; native mode works offline</li>
+        <li>✅ Most games need internet; One Word works offline</li>
         <li>✅ You can delete all data by uninstalling the app</li>
         <li>✅ You control your ad personalization in Android settings</li>
       </ul>
